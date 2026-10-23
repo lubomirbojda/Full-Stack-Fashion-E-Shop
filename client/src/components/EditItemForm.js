@@ -289,11 +289,9 @@ const EditItemForm = () => {
             </div>
 
             <div class="mb-3 m-4">
-                <Link className='no-decoration-text'>
-                    <button class="btn btn-primary" onClick={handleSubmit}>
-                        Uložiť
-                    </button>
-                </Link>
+                <button class="btn btn-primary" onClick={handleSubmit}>
+                    Uložiť
+                </button>
                 <Link to='/katalog' className='no-decoration-text'>
                     <button class="btn btn-secondary">
                         Zrušiť

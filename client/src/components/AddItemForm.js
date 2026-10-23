@@ -168,14 +168,14 @@ const AddItemForm = () => {
             </div>
 
             <div class="mb-3 m-4">
-                <Link className='no-decoration-text' onClick={() => handleTitle('WearWave | Katalóg')}>
-                    <button class="btn btn-primary" onClick={handleSubmit}>
-                        Pridať
+                <button class="btn btn-primary" onClick={() => { handleTitle('WearWave | Katalóg'); handleSubmit(); }}>
+                    Pridať
+                </button>
+                <Link to='/katalog' className='no-decoration-text'>
+                    <button class="btn btn-secondary">
+                        Zrušiť
                     </button>
                 </Link>
-            <button class="btn btn-secondary">
-                Zrušiť
-            </button>
             </div>
         </div>
     )
